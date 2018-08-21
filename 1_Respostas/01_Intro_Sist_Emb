@@ -1,0 +1,15 @@
+
+Questão 1:
+	Sistemas embarcados são sistemas utilizados para realizar uma determinada tarefa utilizando um software e um hardware para isso.
+
+Questão 2:
+	Sistemas microprocessados, são sistemas onde ocorre a automação ou controle  de terminados processos ou tarefas através dispositivos como SoCs.
+
+Questão 3:
+	Sistemas de controle de direção, sistema de ignição ou multimídia. Para eletrodomésticos, sistemas de controle de temperatura para eletrônicos, sistema de temporização, sistema de controle como sensor de chaves e também banco de dados para ações. Industria, sistemas de segurança em equipamentos, verificação das normas .
+
+Questão 4:
+	O Kit de desenvolvimento da disciplina apresente uma arquitetura RISC podendo variar de um ARM11 ate um quadcore Cortex-A53.
+
+Questão 5:
+	A utilização do kit da linha Raspberry vem com o intuito de promover um projeto complexo de modo a testar a habilidade dos alunos na disciplina de sistemas embarcados.
