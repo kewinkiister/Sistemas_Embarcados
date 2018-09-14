@@ -1,0 +1,10 @@
+Por que o Linux recebeu esse nome?
+O nome linux é baseado no nome de um de seus criadores Linus Torvalds que no inicio tinha a intenção de chama-lo de Freax.
+
+O que são daemons?
+um daemon é um programa de computador que executa como um processo em plano de fundo, em vez de estar sob o controle direto de um usuário interativo.
+
+O que é o shell?
+O shell é um interpretador das linhas de comando inseridas no terminal, fornecendo desso modo um interface semelhante a do unix.
+
+Por que é importante evitar executar o terminal como super-usuário?
