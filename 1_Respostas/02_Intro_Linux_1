@@ -18,23 +18,43 @@ O botão de direção para cima, apresenta os ultimos comandos utilizados no ter
 
 Apresente os respectivos comandos no terminal para:
 (a) Obter mais informações sobre um comando. 
+  man (nome do comando).
 (b) Apresentar uma lista com os arquivos dentro de uma pasta. 
+  comando ls.
 (c) Apresentar o caminho completo da pasta. 
+  O comando pwd aprenta o caminho da pasta ou arquivo acessado pelo terminal.
 (d) Trocar de pasta. 
+  O comando mv move uma pasta de uma origem para um destino, possibilitando assim trocar seu caminho.
 (e) Criar uma pasta. 
+  Comando mkdir cria pastas ou diretorios.
 (f) Apagar arquivos definitivamente.
+  Comando rm (nome do arquivo).
 (g) Apagar pastas definitivamente. 
+  Comando rmdir (nome da pasta).
 (h) Copiar arquivos. 
+  Comando cp.
 (i) Copiar pastas.
+  Comando cp -r.
 (j) Mover arquivos. 
+  Comando mv (arq. origem) (arq. destino).
 (k) Mover pastas. 
+  Comando mv -t (pasta origem) (pasta destino).
 (l) Renomear pastas.
+  Comando mv (Nome antigo) (Nome novo).
 (m) Apresentar o conteúdo de um arquivo. 
+  Comando cat (Nome do arquivo).
 (n) Apresentar o tipo de um arquivo. 
+  Comando file (Nome do arquivo).
 (o) Limpar a tela do terminal. 
+  Comando clear.
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto. 
+  Comando grep (Palavra-chave).
 (q) Ordenar informações em um arquivo-texto. 
+  Comando sort.
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto. 
+  Comando sed.
 (s) Conferir se dois arquivos são iguais. 
+  Comando diff (Arquivo 1) (Arquivo2).
 (t) Escrever algo na tela.
+ Comando echo (Messangem).
 
