@@ -1,0 +1,57 @@
+1.Escreva o texto "Ola mundo cruel!" em um arquivo denominado "Ola_mundo.txt". Apresente o conteúdo deste arquivo no terminal.
+$ cat > texto.txt (Enter)
+$Olá mundo cruel! (Control+Z)
+$cat texto.txt (Enter)
+
+2.Apresente o nome de todos os arquivos e pastas na pasta 'root'.
+$sudo su 
+$Password 
+$ls -la 
+
+3.Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
+$ cd /root 
+$ ls -lt | grep "ˆd"
+
+4.Apresente somente as pastas dentro da pasta 'root'.
+$ cd /root 
+$ ls -lt | grep "/"
+
+5.Descubra em que dia da semana caiu o seu aniversário nos últimos dez anos.
+$cal 7 2017
+$cal 7 2016
+$cal 7 2015
+$cal 7 2014
+$cal 7 2013
+$cal 7 2012
+$cal 7 2011
+$cal 7 2010
+$cal 7 2009
+$cal 7 2008
+
+6.Liste somente os arquivos com extensão .txt.
+$cd Desktop/Arqs_aula_02/
+$ ls -1 *.txt
+
+7.Liste somente os arquivos com extensão .png.
+$cd Desktop/Arqs_aula_02/
+$ ls -1 *.png
+
+8.Liste somente os arquivos com extensão .jpg.
+$cd Desktop/Arqs_aula_02/
+$ ls -1 *.jpg
+
+9.Liste somente os arquivos com extensão .gif.
+$cd Desktop/Arqs_aula_02/
+$ ls -1 *.gif
+
+10.Liste somente os arquivos que contenham o nome 'cal'.
+$cd Desktop/Arqs_aula_02/
+$ ls -1 *cal*
+
+Liste somente os arquivos que contenham o nome 'tux'.
+$cd Desktop/Arqs_aula_02/
+$ ls -1 *tux*
+
+Liste somente os arquivos que comecem com o nome 'tux'.
+$cd Desktop/Arqs_aula_02/
+$ ls -1 tux*
