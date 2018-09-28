@@ -68,26 +68,40 @@ Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1'
         Digite seu nome: Olá Ola 
 
 
-4. Crie um código em C que recebe o nome do usuário como um argumento de entrada (usando as variáveis argc e *argv[]), e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_2':
-	$ ./ola_usuario_2 Eu
-	$ Ola Eu
-	$
-
+4. Crie um código em C que recebe o nome do usuário como um argumento de entrada (usando as variáveis argc e *argv[]),
+e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_2':
+	
     código:
-    #include <stdio.h>
-    #include <stdlib.h>
-    
-    int main(int argc, const char *argv[])
-    {
-            scanf("%s", argv[argc - 1]);
-            printf("Ola %s \n", argv[argc - 1]);
-            return 0;
-    }
-    
-    terminal:
-    gcc argumento_ent.c -o argumento
+#include <stdio.h>
+#include <string.h>
 
-    resultado:
-    ./argumento kewin
-    Ola kewin
+int main(int argc, char const *argv[])
+{
+	int i;
+	printf("Ola");
+	for (i=1; i<argc; i++){
+	printf(" %s", argv[i]);
+	}
+	printf("\n");
+	return 0;
+}
+
+terminal:
+./ola_usuario_2 Kewin kuster
+Ola Kewin kuster
+
+5.Apresente os comportamentos do código anterior nos seguintes casos:
+
+(a) Se o usuário insere mais de um nome.
+$ ./ola_usuario_2 Eu Mesmo
+Ola Eu Mesmo
+
+(b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
+$ ./ola_usuario_2 "Eu Mesmo"
+Ola Eu Mesmo
+
+(c) Se é usado um pipe. Por exemplo:
+
+
+
 
