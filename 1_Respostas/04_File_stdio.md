@@ -13,7 +13,8 @@ int main(int argc, const char * argv[]) {
     {
         printf( "Erro na abertura do arquivo");
 exit(-1); }
-while((c = getc(fp) ) != EOF) /* Enquanto não chegar ao final do arquivo */ printf("%c", c); /* imprime o caracter lido */
+while((c = getc(fp) ) != EOF) /* Enquanto não chegar ao final do arquivo */ 
+printf("%c", c); /* imprime o caracter lido */
 printf("\n");
 fclose(fp);
 return 0;
