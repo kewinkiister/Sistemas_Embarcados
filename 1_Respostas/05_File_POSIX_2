@@ -1,0 +1,26 @@
+1.Crie um código em C para escrever "Ola mundo!" em um arquivo chamado 'ola_mundo.txt'.
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main(int argc, const char * argv[])
+{
+	int fp;
+	
+	fp = open ("ola_mundo.txt", O_WRONLY | O_CREAT, S_IRWXU);
+	if(fp==-1)
+	{
+		printf ("Erro na abertura do arquivo.\n");
+		exit (1);
+	}
+	
+	write(fp, "Ola Mundo!", 10);  
+	write(fp, "\n", 1);
+	close(fp);
+
+	return 0;
+}
+
+2.Crie um código em C que pergunta ao usuário seu nome e sua idade, e escreve este conteúdo em um arquivo com o seu nome
+e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
