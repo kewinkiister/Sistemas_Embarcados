@@ -1,0 +1,5 @@
+1. Quantos pipes serão criados após as linhas de código a seguir? Por quê?
+  A)int pid;
+    int fd[2];
+    pipe(fd);
+    pid = fork();
