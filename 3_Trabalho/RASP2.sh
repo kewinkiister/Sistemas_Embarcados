@@ -16,13 +16,13 @@ esac
 echo "Seu tempo restante é de $HORA Horas e $MINUTO Minutos"
  $case $HORA in			#Case relacionado a variavel Hora
  [1-9])				#Caso o usuario possua um saldo
-	echo "Open"		#possitivo de horas o acesso 'e
+	echo "Open"		#possitivo de horas o acesso é
 	;;			#liberado
 -[1-9])				#Caso o saldo seja negativo o acesso
-	echo "Closed"		# 'e negado
+	echo "Closed"		# é negado
 	;;
  0)
-	case $MINUTO in		#Caso o saldo seja nulo 'e feita 
+	case $MINUTO in		#Caso o saldo seja nulo é feita 
 		0)		#a mesma analise para os minutos
 		echo "Closed"
 		;;
