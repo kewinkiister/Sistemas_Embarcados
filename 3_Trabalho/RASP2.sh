@@ -4,26 +4,26 @@ MIN1=$(echo "${QR1:3}")         #Minutos do QRcode
 HR1=$(echo "${QR1:0:2}")        #Horas do QRCode
 MIN=$(date +%M)                 #Minutos do Relogio
 HR=$(date +%H)                  #Horas do Relogio
-HORA=$(($HR1-$HR))
-MINUTO=$(($MIN1-$MIN))
+HORA=$(($HR1-$HR))		#Diferenca entre Hora do usuario e horario atual 
+MINUTO=$(($MIN1-$MIN))		#Diferenca entre minuto do usuario e o minuto atual
 
-case $MINUTO in
+case $MINUTO in			#Caso a diferenca seja negativa 
 -[0-5][0-9])
-	HORA=$(($HORA-1))
-	MINUTO=$(($MINUTO+60))
+	HORA=$(($HORA-1))	#Diminui uma hora
+	MINUTO=$(($MINUTO+60))	#Acrescenta 60 minutos
 esac
 
 echo "Seu tempo restante é de $HORA Horas e $MINUTO Minutos"
- $case $HORA in
- [1-9])
-	echo "Open"
-	;;
--[1-9])
-	echo "Open"
+ $case $HORA in			#Case relacionado a variavel Hora
+ [1-9])				#Caso o usuario possua um saldo
+	echo "Open"		#possitivo de horas o acesso 'e
+	;;			#liberado
+-[1-9])				#Caso o saldo seja negativo o acesso
+	echo "Closed"		# 'e negado
 	;;
  0)
-	case $MINUTO in
-		0)
+	case $MINUTO in		#Caso o saldo seja nulo 'e feita 
+		0)		#a mesma analise para os minutos
 		echo "Closed"
 		;;
 		[0-6][0-9])
