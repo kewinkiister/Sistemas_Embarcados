@@ -16,7 +16,8 @@
 # Uso: ./SomaValores.sh                                                 #
 #                                                                       #
 #########################################################################
-
+while true
+do
 read -p "Informe o tempo de acesso do cliente em minutos: " MIN
 CAL=$(date +%M)	#Declaracao da variavel minuto do calendario 
 MIN=$(($MIN+$CAL))	#Minuto 'e igual ao minuto do calendario + minutos inseriods pelo usuario
@@ -25,15 +26,11 @@ DIA=$(date +%H)		#Dia do calendario
 
 
 while test "$MIN" -gt 60	#Em quanto min for maior que 60 faca
-do
-	if test "$MIN" -gt 60
+do				#While transforma o credito inserido pelo 
+	if test "$MIN" -gt 60	#usuario em um horario futuro
 	then
 		HORA=$(($HORA+1))
 		MIN=$(($MIN-60))
-		if test "$MIN" -lt 10
-		then
-			MIN = "0$MIN"
-		fi
 
 	fi
 done
@@ -41,7 +38,10 @@ done
 
 		MIN=$(($MIN+100))
 		MIN=$(echo "${MIN#1}")
-
+		HORA=$(($HORA+100))
+		HORA=$(echo "${HORA#1}")
 echo "O tempo limite de acesso do cliente é $HORA:$MIN"
-$(qrencode " $HORA:$MIN" -o QRCode.png)
+$(qrencode " $HORA:$MIN" -o QRCode.png)	#Insere no QR code o horario de
+					#se encerra o tempo do usuario
 
+done
